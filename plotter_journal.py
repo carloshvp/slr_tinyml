@@ -32,7 +32,7 @@ journals["Sensors (Switzerland)"] = pub_Sensors
 journals = journals.drop("Sensors")
 
 # Adding rest
-pub_others = journals.sum() - (journals["Sensors (Switzerland)"] + journals["Electronics (Switzerland)"] + journals["IEEE Access"] + journals["Microprocessors and Microsystems"])
+pub_others = journals.sum() - (journals["Sensors (Switzerland)"] + journals["Electronics (Switzerland)"] + journals["IEEE Access"] + journals["Microprocessors and Microsystems"]+ journals["Applied Sciences (Switzerland)"]+ journals["ACM Journal on Emerging Technologies in Computing Systems"]+ journals["ACM TRANSACTIONS ON EMBEDDED COMPUTING SYSTEMS"]+ journals["JOURNAL OF CIRCUITS SYSTEMS AND COMPUTERS"])
 journals["Others"] = pub_others
 
 journals = journals[["IEEE Access","Microprocessors and Microsystems","Electronics (Switzerland)","Applied Sciences (Switzerland)","Sensors (Switzerland)","ACM Journal on Emerging Technologies in Computing Systems", "JOURNAL OF CIRCUITS SYSTEMS AND COMPUTERS", "ACM TRANSACTIONS ON EMBEDDED COMPUTING SYSTEMS", "Others"]]

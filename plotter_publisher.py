@@ -61,5 +61,7 @@ pubs = ["IEEE", "MDPI", "Elsevier", "ACM", "Springer", "Others"]
 plt.bar(pubs, publishers)
 plt.xlabel('Publishers')
 plt.ylabel('Number of articles published')
+yint = [0,5,10,15,20]
+plt.yticks(yint)
 #plt.show()
-plt.savefig('figures/publishers.pdf')
+plt.savefig('figures/publishers_170722.pdf')
