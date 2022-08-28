@@ -9,6 +9,8 @@ df = df[df.Offtopic == "No"]
 # Extract the countries of publication and count them
 countries = df["Country"].value_counts()
 
+print(countries)
+
 countries.plot.bar()
 plt.xlabel('Countries of publication')
 plt.ylabel('Number of articles published')
@@ -16,4 +18,4 @@ plt.ylabel('Number of articles published')
 #plt.show()
 plt.tight_layout()
 
-plt.savefig('figures/country.pdf')
+plt.savefig('figures/country_28082022.pdf')

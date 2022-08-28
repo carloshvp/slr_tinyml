@@ -19,6 +19,8 @@ pub_year = pub_year_left + pub_year_right
 #Extrapolate value of 2022 for complete year (otherwise only considered until March)
 pub_year[2022] = pub_year[2022]*4
 
+print(pub_year)
+
 plt.plot(pub_year)
 plt.xlabel('Year')
 plt.ylabel('Number of articles published')

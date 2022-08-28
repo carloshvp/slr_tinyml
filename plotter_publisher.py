@@ -39,6 +39,7 @@ pub_Springer = publishers["Springer"] + publishers["SPRINGER HEIDELBERG"] + publ
 publishers["Springer"] = pub_Springer
 publishers = publishers.drop("SPRINGER HEIDELBERG")
 publishers = publishers.drop("SPRINGERNATURE")
+#publishers = publishers.drop("SPRINGER")
 publishers = publishers.drop("Springer Science and Business Media Deutschland GmbH")
 
 # Resorting publishers one more time
@@ -56,7 +57,7 @@ publishers = publishers.drop("KOREAN INST COMMUNICATIONS SCIENCES (K I C S)")
 
 pubs = ["IEEE", "MDPI", "Elsevier", "ACM", "Springer", "Others"]
 
-
+print(publishers)
 
 plt.bar(pubs, publishers)
 plt.xlabel('Publishers')
@@ -64,4 +65,4 @@ plt.ylabel('Number of articles published')
 yint = [0,5,10,15,20]
 plt.yticks(yint)
 #plt.show()
-plt.savefig('figures/publishers_170722.pdf')
+plt.savefig('figures/publishers_28082022.pdf')

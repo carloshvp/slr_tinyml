@@ -42,9 +42,11 @@ pubs = ["ACM Transactions on\nEmbedded Computing Systems","Journal of Circuits\n
 # Resorting journals one more time
 journals = journals.sort_values()
 
+print(journals)
+
 plt.barh(pubs, journals)
 plt.ylabel('Journal title')
 plt.xlabel('Number of articles published')
 #plt.show()
 plt.tight_layout()
-plt.savefig('figures/journal.pdf')
+plt.savefig('figures/journal_28082022.pdf')

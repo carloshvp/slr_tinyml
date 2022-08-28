@@ -52,4 +52,4 @@ plt.ylabel('Number of appearances')
 #plt.show()
 plt.tight_layout()
 
-plt.savefig('figures/keywords.pdf')
+plt.savefig('figures/keywords_28082022.pdf')
